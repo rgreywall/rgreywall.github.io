@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Company</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="company.css" rel="stylesheet" type="text/css" />
+        
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Quicksand" rel="stylesheet">
+    </head>
+
+<body>
+
+<!--Main Container-->
+    <div id="main_cont">
+
+        <!-- 4 Content Containers-->
+
+
+            <!--Eating Question-->
+            <div class="sml_conts" id="cont1">
+                <h1 id="head_q">With company?</h1>
+            </div>
+            <!--Eating Question-->
+            <img src= "../imgs/charSolo-13.svg" id="solochar" >
+
+                <!--Solo Icon-->
+                <div class="sml_conts" id="cont2">
+                    <button id="solo" name="Solo" onclick="soloOrFriends(this)">Solo</button>
+                </div>
+                <!--Lunch Icon-->
+
+
+                <!--With Friends Icon-->
+                <div class="sml_conts" id="cont3">
+                    <button id="group" name="Friends" onclick="soloOrFriends(this)">With Friends</button>
+                </div>
+            <img src="../imgs/company-12.svg" id="friends">
+                <!--With Friends Icon-->
+
+
+        <!-- 4 Content Containers-->
+
+    </div>
+<!--Main Container-->
+
+
+<!--Next Button-->
+    <!--<div id="cont4">
+        <button id="nex">Next</button>
+    </div>-->
+    <div id="back_btn" onclick="previous()">
+        <button id="bac"><img id="img_bac" src="../imgs/back_btn.svg"></button>
+    </div>
+<!--Next Button-->
+    <script src="../app.js"></script>
+
+</body>
+</html>

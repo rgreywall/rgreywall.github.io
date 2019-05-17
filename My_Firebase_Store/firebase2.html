@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 11 - Firebase Authentication and Img Source</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDn9XRqjI4xIHZG29JcK-UpfZKl5-v5T20",
+        authDomain: "webapp2-42894.firebaseapp.com",
+        databaseURL: "https://webapp2-42894.firebaseio.com",
+        projectId: "webapp2-42894",
+        storageBucket: "webapp2-42894.appspot.com",
+        messagingSenderId: "246802041470"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <div class="header">
+     <a href="#default" class="logo">My Firebase</a>
+       <div class="header-right">
+           <a class="active" href="#home">Home</a>
+           <a href="#contact">Contact</a>
+           <a href="#about">About</a>
+       </div>
+   </div>
+
+
+    <script>
+
+            function addData(){ //alert("adding data");
+                                //get name user types in
+                               var product_name =
+                                   document.getElementById("pname").value;
+                               var product_price =
+                                   document.getElementById("price").value;
+                               var product_image =
+                                   document.getElementById("image").value;
+
+                               db.collection("products").add({ productname: product_name, productprice: product_price, productimage: product_image
+                            })
+                                   .then(function(docRef) {
+                                   console.log("Document written with ID: ", docRef.id);
+
+                                   //update the products view
+                                   getProducts();
+                               }) .catch(function(error) {
+                                   console.error("Error adding document: ", error);
+                               });
+                              }
+
+    </script>
+</head>
+
+
+<body>
+    <h1 id="products">Temp</h1>
+
+    <form method="post" action="#">
+        Product Name:<br>
+        <input type="text" name="pname" id="pname"><br>
+        Product Price:<br>
+        <input type="text" name="price" id="price"><br>
+        Product Image:<br>
+        <input type="text" name="image" id="image"><br>
+        <button type="button" onclick="addData()">Add Data</button>
+    </form>
+
+    <form method="post" action="#">
+        Email:<br>
+        <input type="text" name="email" id="email"><br>
+        Password:<br>
+        <input type="text" name="password" id="password"><br>
+    </form>
+
+    <button type="button" onclick="adduser()">Add User</button>
+    <button type="button" onclick="signIn()">Sign In</button>
+    <button type="button" onclick="signOut()">Sign Out</button>
+
+    <script>
+        function adduser(){
+               alert("adding user!");
+               var email = "rgreywall@gmail.com";
+               var password = "password";
+               firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+                   // Handle Errors here
+                   var errorCode = error.code;
+                   var errorMessage = error.message;
+                   alert("error"+ error.message);
+                   // ...
+               });
+           }
+    </script>
+
+    <script>
+    alert("Signing In");
+
+    var email="rgreywall@gmail.com";
+    var password = "password";
+
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        alert("Error signing in");
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+    });
+    }
+    </script>
+
+    <script>
+    function signOut(){
+        firebase.auth().signOut().then(function() {
+            alert("Signed out!");
+        }).catch(function(error) {
+            // An error happened.
+        });
+    }
+    </script>
+
+    <script>
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+        // User is signed in.
+        alert(user.email);
+        console.log(user.toJSON());
+        } else {
+        // No user is signed in.
+        alert("user not signed in");
+    }
+});
+    </script>
+
+    <script>
+         var productdisplay = document.getElementById('products');
+         var db = firebase.firestore();
+
+         //put in function because we may want to call it more than once
+         function getProducts(){
+            db.collection("products").get().then((querySnapshot) => {
+
+             //alert("Data Recieved");
+
+             productdisplay.innerHTML = "";
+
+             querySnapshot.forEach((doc) => {
+
+             productdisplay.innerHTML += (doc.data().productname + " " + doc.data().productprice + " " + "<img src='img/"+ doc.data().productimage+"'>" + "<br>");
+
+             });
+
+        });
+        }
+        getProducts();
+     </script>
+
+    <progress value="0" max="100" id="uploader">0%</progress>
+    <input type="file" value="upload" id="fileButton">
+    
+    <img src="img/RainbowHouse.jpeg" alt="image" width="100" height="100" id="holder">
+    
+<script>
+        //get references to th 3 html elments on the page
+        var uploader = document.getElementById("uploader");
+        var fileButton = document.getElementById("fileButton");
+        var holder = document.getElementById("holder");
+        //get a ref to Firebase Storage
+        var storage = firebase.storage();
+        ////////////// Will
+        function getImageForPath(p){
+            var storageRef = firebase.storage().ref();
+            var spaceRef = storageRef.child(p);
+            storageRef.child(p).getDownloadURL().then(function(url) {
+                var fullurl = url;
+                alert(fullurl);
+                holder.src = fullurl;
+            }).catch(function(error) {
+                //catch error here
+            });
+        }
+        getImageForPath('images/puppy1.jpg');
+        /////////////
+        fileButton.addEventListener('change', function(e){
+            //get the file
+            alert("uploading file...");
+            var file = e.target.files[0];
+            //create the storage ref
+            var storageRef = firebase.storage().ref('images/'+file.name);
+            //uplaod the file
+            var task = storageRef.put(file);
+            //update the progress bar
+            task.on('state_changed',
+                function progress(snapshot) {
+                var percentage = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
+                uploader.value = percentage;
+                },
+                function error(err){
+                console.log(err);
+            },
+            function complete(){
+                alert("upload complete");
+            }
+        );
+    });
+</script>
+    
+<!--<script>
+    function addData(){ //alert("adding data");
+                        //get email user types in
+                       var email =
+                           document.getElementById("rgreywall@gmail.com").value;
+        
+                       var password =
+                           document.getElementById("password").value;
+                    }
+
+    </script>--->
+    
+</body>
+</html>

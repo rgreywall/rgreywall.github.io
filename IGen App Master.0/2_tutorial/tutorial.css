@@ -1,0 +1,263 @@
+/*=========IPHONE 6s PLUS MEDIA SCREEN============*/
+@media only screen and (max-width: 414px) {
+    
+    body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+
+    /*#tut_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        top:0px;
+    }
+
+    #cont1{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 15pt;
+        color:#ffffff;
+    }
+
+    #title{
+        text-align: center;
+    }
+    
+    #cont2{
+        position: absolute;
+        top:80px;
+    }
+
+    #instruct{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20pt;
+        color:#ffffff;
+        text-align: center;
+    }
+
+    #cont3{
+        position: absolute;
+        top: 180px;
+    }
+
+    #tut_q{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 24pt;
+        color:#ffffff;
+        text-align: center;  
+    }
+    
+    #butt_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top:75px;
+    }
+    
+    .buttons{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color:#018ABE;
+        font-size: 24pt;
+        padding-top:10px;
+        padding-left: 60px;
+        width: 300px;
+        height: 60px;
+        background-color: #ffffff;
+        border-radius: 25px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border: none;
+    }
+    
+    #but1{
+       top:40px; 
+    }
+    
+    #but2{
+        top:160px;
+    }
+    
+    #but3{
+        top:280px;
+    }
+    
+    #but4{
+        top:400px;
+    }
+    
+    .imgs {
+        width:50px;
+        height:60px;
+        float:right;
+        padding-right: 30px;
+        transform: translateY(-10px);
+        /*transform: translateX(-5px);*/
+    }
+    
+    #next_cont{
+        display:flex;
+        position: absolute;
+        bottom:20px;
+        right:0px;
+    }
+
+    #next{
+        width: 125px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 25px;
+        margin: 5px;
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        font-weight: lighter;
+        color: #018ABE;
+        font-size: 21pt;
+    }
+
+    video{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+}
+
+
+/*=========IPAD PRO MEDIA SCREEN============*/
+@media only screen and (min-width:415px) {
+    
+    body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+
+    #tut_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        top:0px;
+    }
+
+    #cont1{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 35pt;
+        color:#ffffff;
+    }
+
+    #title{
+        text-align: center;
+    }
+    
+    #cont2{
+        position: absolute;
+        top:180px;
+    }
+
+    #instruct{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 40pt;
+        color:#ffffff;
+        text-align: center;
+    }
+
+    /*#cont3{
+        position: absolute;
+        top: 180px;
+    }
+
+    #tut_q{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 24pt;
+        color:#ffffff;
+        text-align: center;  
+    }*/
+    
+    #butt_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top:160px;
+    }
+    
+    .buttons{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color:#018ABE;
+        font-size: 45pt;
+        padding-top:20px;
+        padding-left: 100px;
+        width: 600px;
+        height: 120px;
+        background-color: #ffffff;
+        border-radius: 45px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border: none;
+    }
+    
+    #but1{
+       top:40px; 
+    }
+    
+    #but2{
+        top:260px;
+    }
+    
+    #but3{
+        top:480px;
+    }
+    
+    #but4{
+        top:700px;
+    }
+    
+    .imgs {
+        width:100px;
+        height:100px;
+        float:right;
+        padding-right: 90px;
+        transform: translateY(-10px);
+        /*transform: translateX(-5px);*/
+    }
+    
+        
+    #next_cont{
+        display:flex;
+        position: absolute;
+        bottom:0px;
+        right:20px;
+    }
+
+    #next{
+        width: 135px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 30px;
+        margin: 10px;
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        font-weight: lighter;
+        color: #018ABE;
+        font-size: 21pt;
+    }
+    
+    video{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+}

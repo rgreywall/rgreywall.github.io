@@ -1,0 +1,429 @@
+/*=========IPHONE 6s PLUS MEDIA SCREEN============*/
+@media only screen and (max-width: 414px) {
+    
+    body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+
+    #main_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        top:0px;
+    }
+
+    .sml_conts{
+        display: flex;
+        position: absolute;
+    }
+
+    #cont0{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 15pt;
+        color:#ffffff;
+        top:0px;
+    }
+    
+    #title{
+        text-align: center;
+    }
+    
+    #cont1{
+        top: 90px;
+    }
+
+    #instruct{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20pt;
+        color:#ffffff;
+        text-align: center;
+
+    }
+    
+    #cont2{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        top:200px;
+    }
+
+    #pan{
+        
+        width:200px;
+        height:200px;
+    }
+    
+    /*#slideSource {
+        opacity: 0;
+        transition: opacity 1s; 
+    }
+
+    #slideSource.fade {
+        opacity: 1;
+    }*/
+    
+     #img_btn{
+        align-items: center;
+        text-align: center;
+        top:130px;
+    }
+    
+    .game_btn{
+        width: 85px;
+        height: 40px;
+        background-color:#018ABE;
+        border: solid 2px #D6E8EE;
+        border-radius: 25px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 16pt;
+        color: #D6E8EE;
+    }
+    
+    #ques {
+        font-family: 'PT Sans Narrow', helvetica, sans-serif;
+        font-size: 24pt;
+        color:#ffffff;
+        top:200px;
+        text-align:center;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .btn_cont{
+        position: absolute;
+        top:540px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .btn_opts{
+        width: 130px;
+        height: 45px;
+        background-color:#D6E8EE;
+        border: solid 4px #018ABE;
+        border-radius: 25px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 16pt;
+        color: #018ABE;
+    }
+    
+    #opt_1{
+        margin-right: 7px;
+    }
+    
+    #opt_2{
+        margin-right: 7px;
+    }
+    
+    #opt_3{
+        margin-right: 20px;
+    }
+    
+    
+    #cont3{
+        display:flex;
+        position: absolute;
+        bottom:10px;
+        right:10px;
+    }
+
+     #next{
+        height:6vh;
+        width:25vw;
+        background-color: #ffffff;
+        border-radius: 20px;
+        margin: 10px;
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        color: #018ABE;
+        font-size: 25px;
+    }
+    
+    #back_btn{
+        display:flex;
+        position: absolute;
+        bottom:10px;
+        left:20px;
+    }
+    
+    #img_bac{
+        height:50px;
+        width:50px;
+    }
+    
+    #state{
+    color: #D6E8EE;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: slideIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+    
+}
+
+/* Modal Content */
+.modal-content {
+    
+  background-color: #D6E8EE;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #888;
+    border-radius: 25px;
+  width: 60%;
+}
+    #centerElement {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+    
+    #labelText {
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        font-size: 14pt;
+    }
+    
+    #validateEat {
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        font-size: 12pt;
+        color: #018ABE;
+    }
+}
+
+
+/*=========IPAD PRO MEDIA SCREEN============*/
+@media only screen and (min-width:415px) {
+    
+    body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+
+    #main_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        top:0px;
+    }
+
+    .sml_conts{
+        display: flex;
+        position: absolute;
+    }
+
+    #cont0{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 35pt;
+        color:#ffffff;
+        top:0px;
+    }
+    
+    #title{
+        text-align: center;
+    }
+    
+    #cont1{
+        top: 200px;
+    }
+
+    #instruct{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 40pt;
+        color:#ffffff;
+        text-align: center;
+
+    }
+    
+    #cont2{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        top:400px;
+    }
+
+    #pan{
+        
+        width:400px;
+        height:400px;
+    }
+    
+    /*#slideSource {
+        opacity: 0;
+        transition: opacity 1s; 
+    }
+
+    #slideSource.fade {
+        opacity: 1;
+    }*/
+    
+     #img_btn{
+        align-items: center;
+        text-align: center;
+        top:260px;
+    }
+    
+    .game_btn{
+        width: 160px;
+        height: 78px;
+        background-color:#018ABE;
+        border: solid 4px #D6E8EE;
+        border-radius: 45px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 30pt;
+        color: #D6E8EE;
+    }
+    
+    #ques {
+        font-family: 'PT Sans Narrow', helvetica, sans-serif;
+        font-size: 46pt;
+        color:#ffffff;
+        top:400px;
+        text-align:center;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .btn_cont{
+        position: absolute;
+        top:1050px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .btn_opts{
+        width: 255px;
+        height: 85px;
+        background-color:#D6E8EE;
+        border: solid 8px #018ABE;
+        border-radius: 45px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 31pt;
+        color: #018ABE;
+    }
+    
+    #opt_1{
+        margin-right: 12px;
+    }
+    
+    #opt_2{
+        margin-right: 12px;
+    }
+    
+    #opt_3{
+        margin-right: 5px;
+    }
+    
+    
+    #cont3{
+        display:flex;
+        position: absolute;
+        bottom:30px;
+        right:10px;
+    }
+
+     #next{
+        height:6vh;
+        width:19vw;
+        background-color: #ffffff;
+        border-radius: 45px;
+        margin: 5px;
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        color: #018ABE;
+        font-size: 42pt;
+    }
+    
+    #back_btn{
+        display:flex;
+        position: absolute;
+        bottom:40px;
+        left:45px;
+    }
+    
+    #img_bac{
+        height:100px;
+        width:100px;
+    }
+    
+#state{
+    color: #D6E8EE;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: slideIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+    
+}
+
+/* Modal Content */
+.modal-content {
+    
+  background-color: #D6E8EE;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #888;
+    border-radius: 25px;
+  width: 80%;
+}
+    #centerElement {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+    
+    #labelText {
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        font-size: 30pt;
+    }
+    
+    #validateEat {
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        font-size: 25pt;
+        color: #018ABE;
+    }

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Bai+Jamjuree|Rajdhani&amp;subset=latin-ext");
+
+html {
+  box-sizing: border-box;
+}
+
+*{
+	padding: 0;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  background-image:url(https://www.rnz.co.nz/assets/news/68308/eight_col_milky-way-984050_960_720.jpg?1463018409);
+  height: 700px;
+  padding-top: 5px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+  font-size: 600% !important;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 900!important;
+  color: white!important;
+}
+
+.col-md-4 h1{
+  font-size: 250%!important;
+  font-family: sans-serif;
+}
+
+.col-md-4 p{
+  margin: auto;
+  font-weight: bolder;
+  font-family: sans-serif;
+  width: 70%;
+}
+
+input{
+  margin-top: 10%!important;;
+  width: 280px;
+  height: 45px;
+  text-align: center;
+  font-family: sans-serif!important;
+  font-size: 150%!important;
+}
+
+button{
+  font-size: 150%!important;
+  color: white!important;
+  background-color: #32486A;
+  font-family: sans-serif !important;
+  font-weight: bolder!important;;
+  border-radius: 3%;
+  border: 1px #32486A;;
+  margin-top: 2%!important;
+  background-color: #32486A;;
+  width: 280px;
+  height: 45px;
+}
+
+.zodiacs p{
+  font-size: 150%!important;
+  width: 75%;
+  margin: auto;
+  color: white;
+}
+
+.zodiacs h1{
+  color: #fff;
+  margin-top: 5%;
+}
+
+.zodiacs img{
+  margin-top: 1%;
+}

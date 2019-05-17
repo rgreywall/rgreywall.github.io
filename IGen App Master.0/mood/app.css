@@ -1,0 +1,87 @@
+body {
+    font-family: 'Quicksand', helvetica, sans-serif;
+    background: #018ABE;
+    background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+    height: 100vh;
+    width: 100vw;
+}
+
+.buttons {
+    font-family: 'Quicksand', helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    color: #018ABE;
+    font-size: 24pt;
+    padding-top: 10px;
+    padding-left: 60px;
+    margin: 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+    margin: 20px;
+    transform: translateY(25%);
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    float: right;
+    padding-right: 30px;
+    padding-left: -10px;
+    transform: translateY(-5px);
+}
+
+#butcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(15%);
+}
+
+@media only screen and (max-width:800px){
+    /*mobile*/
+    
+    .buttons {
+        margin: 5%;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) {
+  /* For Ipad Pro: */
+    h1 {
+        font-size: 60pt;
+        margin-top: 10%;
+    }
+    
+    #butcont {
+        margin-top: 15%;
+    }
+    
+    .buttons {
+        margin: 4%;
+        background-color: white;
+        width: 45%;
+        height: 40%;
+        font-size: 35pt;
+    }
+    
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    img {
+        width: 75px;
+        height: 75px;
+    }
+}

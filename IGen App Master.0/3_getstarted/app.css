@@ -1,0 +1,209 @@
+ body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+ 
+    #app{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        top:0px;
+    }
+
+    h1{
+      position: absolute;
+      top:150px;
+      margin-left:75px;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      font-size:35pt;
+    }
+
+    .button{
+        position: relative;
+      top: 300px;
+    }
+    
+    .button1 {
+      background-color: white;
+      border-radius: 25px;
+      width: 150px;
+      height: 70px;
+      border: none;
+      font-size: 40pt;
+      margin-left:125px;
+      margin-top: 0px;
+      margin-bottom: 80px;
+      color: #018ABE;
+      font-family: 'PT Sans Narrow', sans-serif;
+      box-shadow: 0 6px #018ABE;
+    }
+    
+    img {
+        width: 80%;
+        top: 50%;
+    }
+    
+    #left {
+        transform: translateY(80%) translateX(-5%);
+    }
+    
+    #right {
+        transform: translateY(-20%) translateX(25%);
+    }
+
+#back_btn{
+        display:flex;
+        position: absolute;
+        bottom:10px;
+        left:20px;
+    }
+    
+#img_bac{
+        height:50px;
+        width:50px;
+    }
+   
+
+
+@media only screen and (max-width: 414px) {
+    
+    body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+  
+    #app{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        top:0px;
+    }
+
+    h1{
+      position: absolute;
+      top:150px;
+      margin-left:75px;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      font-size:35pt;
+    }
+
+    .button{
+      top: 300px;
+      position: relative;
+    }
+    
+    .button1 {
+      background-color: white;
+      border-radius: 25px;
+      width: 150px;
+      height: 70px;
+      border: none;
+      font-size: 40pt;
+      margin-left:125px;
+      margin-top: 0px;
+      margin-bottom: 80px;
+      color: #018ABE;
+      font-family: 'PT Sans Narrow', sans-serif;
+      box-shadow: 0 6px #018ABE;
+    }
+    
+    img {
+        width: 80%;
+    }
+    
+    #left {
+        transform: translateY(80%) translateX(-5%);
+    }
+    
+    #right {
+        transform: translateY(-20%) translateX(25%);
+    }
+   
+}
+
+
+/*=========IPAD PRO MEDIA SCREEN============*/
+@media only screen and (min-width:415px) {
+    
+    body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+    
+    #app{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        top:0px;
+    }
+
+    h1{
+      position: absolute;
+      top:250px;
+      margin-left:245px;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      font-size:70pt;
+    }
+
+    .button{
+      position: absolute;
+      top: 550px;
+        z-index: 99;
+    }
+    
+    .button1 {
+      background-color: white;
+      border-radius: 45px;
+      width: 280px;
+      height: 130px;
+      border: none;
+      font-size: 70pt;
+      margin-left:350px;
+      margin-top: 0px;
+      margin-bottom: 80px;
+      color: #018ABE;
+      font-family: 'PT Sans Narrow', sans-serif;
+      box-shadow: 0 12px #018ABE;
+        
+    }
+    
+    img {
+        width: 80%;
+    }
+   
+    #left {
+        transform: translateY(50%) translateX(-5%);
+    }
+    
+    #right {
+        transform: translateY(-50%) translateX(25%);
+    }
+    
+    #back_btn{
+        display:flex;
+        position: absolute;
+        bottom:40px;
+        left:45px;
+    }
+    
+    #img_bac{
+        height:100px;
+        width:100px;
+    }
+}
+    

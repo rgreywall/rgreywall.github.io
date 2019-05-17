@@ -1,0 +1,38 @@
+html{
+    display:flex;
+}
+
+svg {
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius: 10px;
+    border: 6px solid #4cb2a6;
+    z-index:10;
+}
+
+h2 {
+    font-family: 'Kalam', cursive;
+}
+
+#desc{
+    position: absolute;
+    top:600px;
+    left: 15px;
+    z-index: 20;
+    background-color: #4cb2a6;
+    opacity: .7;
+    text-align: left;
+    padding: 20px;
+    color: white;
+    border-radius: 30px;
+    border: 2px solid #2B2E34;
+    width: 50%;
+    height: 35%;
+}
+
+#Diff:hover, #Oil1:hover, #Oil2:hover, #Oil3:hover,
+#Logo:hover, #Clock:hover, #Spray:hover, #Cactus:hover, #Lamp:hover{
+    cursor:  pointer;
+
+}

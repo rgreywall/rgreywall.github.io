@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Eat</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="app.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Quicksand" rel="stylesheet">
+    </head>
+
+<body>
+
+<!--Main Container-->
+    <div id="main_cont">
+
+        <!-- 4 Content Containers-->
+
+
+            <!--Eating Question-->
+            <div class="sml_conts" id="cont1">
+                <h1 id="head_q">What are you<br>eating?</h1>
+            </div>
+            <!--Eating Question-->
+
+
+                <!--Breakfast Icon-->
+                <div class="sml_conts" id="cont2">
+                    <button id="bfast" name="Breakfast" onclick="eat(this)">Breakfast</button>
+                </div>
+                <!--Breakfast Icon-->
+
+
+                <!--Lunch Icon-->
+                <div class="sml_conts" id="cont3">
+                    <button name="Lunch" id="lunch" onclick="eat(this)">Lunch</button>
+                </div>
+                <!--Lunch Icon-->
+
+
+                <!--Dinner Icon-->
+                <div class="sml_conts" id="cont4">
+                    <button name="Dinner" id="din" onclick="eat(this)">Dinner</button>
+                </div>
+                <!--Dinner Icon-->
+
+
+        <!-- 4 Content Containers-->
+         <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="close" onclick="closIt()">&times;</div>
+                  <div id="centerElement">
+                    <Label id="labelText"></Label>
+                    <input id="inpEat" type="Text" required><br>
+                    <button id="validateEat" onclick="vEat()"> Done </button>
+                  </div>
+                
+              </div>
+        </div>
+    </div>
+<!--Main Container-->
+
+
+<!--Go Back Button-->
+    <div id="back_btn" onclick="previous()">
+        <button id="bac" ><img id="img_bac" src="../imgs/back_btn.svg"></button>
+    </div>
+<!--Go Back Button-->
+    <script src="../app.js"></script>
+
+</body>
+</html>

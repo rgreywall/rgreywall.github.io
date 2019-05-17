@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tutorial Page 4</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="tutorial4.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Quicksand" rel="stylesheet">
+    </head>
+
+<body>
+
+<!--Main Container-->
+    <div id="main_cont">  
+    
+            <!--Title-->
+            <div class="sml_conts" id="cont0">
+                <h1 id="title">Tutorial</h1>
+            </div>   
+            <!---Title-->
+
+    
+            <!--Practice-->
+            <div class="sml_conts" id="cont1">
+                <h1 id="instruct">now, practice making<br> a caption!</h1>
+            </div>
+            <!--Practice-->
+        
+        
+            <!--Pick Option Game-->
+            <div class="sml_conts" id="cont2">
+                <div id="slideSource"><img id="pan" src="../imgs/iconsIG-02.svg" alt="slide"></div>
+                <br>
+                
+                <div class="sml_conts" id=img_btn>
+                </div>
+                
+                <br>
+                <div class="sml_conts" id="ques">"I'm happy and eating __________<br> alone for breakfast"</div>
+            </div>
+        
+            <div class="btn_cont">
+                <div id="opt_1">
+                <button class="btn_opts" id="waffles">waffles</button>
+                </div>
+        
+                <div id="opt_2">
+                <button class="btn_opts" id="toast">toast</button>
+                </div>
+        
+                <div id="opt_3">
+                <button class="btn_opts" id="pancakes">pancakes</button>
+                </div>
+            </div>
+        
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="close" onclick="closIt()">&times;</div>
+                  <div id="centerElement">
+                    <Label id="labelText"></Label>
+<!--                    <input id="inpEat" type="Text" required>--><br>
+                    <button id="validateEat" onclick="closIt()"> Done </button>
+                  </div>
+                </div>
+        </div>
+        <!--Pick Option Game-->
+    </div>
+<!--Main Container-->
+
+
+<!--Next Button-->
+    <div id="cont3">
+        <button id="next" onclick="nextToGetStarted()">Next</button>
+    </div>
+<!--Next Button-->
+    <div id="back_btn" onclick="previous()">
+        <button id="bac"><img id="img_bac" src="../imgs/back_btn.svg" alt="back"></button>
+    </div>
+        <script src="tutorial4.js"></script>
+</body>
+</html>

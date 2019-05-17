@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IGEN APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="generator.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    </head>
+    <body onload="generation()">
+        <div id="gen">
+            <img src="../imgs/happyS.svg" id="char">
+            <img src="../imgs/iconsIG-02.svg" id="bf">
+        </div>
+        <div id="caption">
+        <h1>I'm happily eating pancakes alone for breakfast</h1>
+        </div>
+        <div id="clipboard"><img src="../imgs/iconsIG-05.svg" id="copy" onclick="CopyToClipboard('h1')">
+        </div>
+        
+        <div id="back_btn">
+            <button id="home" onclick="goBack()"><img id="img_home" src="../imgs/home-08.svg">
+            </button>
+        </div>
+        
+        
+        
+        <script src="../graphics.js"></script>
+    <script src="generator.js"></script>
+    <script src="../app.js"></script>
+
+    </body>
+</html>

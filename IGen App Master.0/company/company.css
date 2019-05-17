@@ -1,0 +1,212 @@
+/*=========IPHONE X MEDIA SCREEN============*/
+@media screen and (min-width: 375px) {
+    
+    body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+    
+    #back_btn{
+        display:flex;
+        position: absolute;
+        bottom:10px;
+        left:20px;
+    }
+    
+    #img_bac{
+        height:50px;
+        width:50px;
+    }
+    #main_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        top:25px;
+    }
+
+    .sml_conts{
+        display: flex;
+        position: absolute;
+    }
+
+    #cont1{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 20px;
+        color:#ffffff;
+        top: 25px;
+    }
+
+    #head_q{
+        text-align: center;
+
+    }
+
+    #cont2{
+        top:250px;
+    }
+
+    #solo{
+        height:8.5vh;
+        width:60vw;
+        background-color: #ffffff;
+        border-radius: 25px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 30px;
+    }
+
+    #cont3{
+        top:350px;
+    }
+
+    #group{
+        height:8.5vh;
+        width:60vw;
+        background-color: #ffffff;
+        border-radius: 25px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 30px;
+    }
+
+    #cont4{
+        display:flex;
+        position: absolute;
+        bottom:10px;
+        right:10px;
+    }
+
+    /*#nex{
+        height:6vh;
+        width:32vw;
+        background-color: #ffffff;
+        border-radius: 25px;
+        margin: 10px;
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        color: #018ABE;
+        font-size: 30px;
+    }*/
+    
+    #solochar {
+        width: 30%;
+        transform: translateY(70%) translateX(-130%);
+    }
+    
+    #friends {
+        width: 40%;
+        transform: translateY(145%) translateX(70%);
+    }
+}
+
+
+
+
+/*=========IPAD PRO MEDIA SCREEN============*/
+@media screen and (min-width: 1024px) {
+    
+    body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+
+    #main_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        top:25px;
+    }
+
+    .sml_conts{
+        display: flex;
+        position: absolute;
+    }
+
+    #cont1{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 40pt;
+        color:#ffffff;
+        top: 0px;
+        
+    }
+
+    #head_q{
+        text-align: center;
+
+    }
+
+    #cont2{
+        top:450px;
+    }
+
+    #solo{
+        height:8.5vh;
+        width:50vw;
+        background-color: #ffffff;
+        border-radius: 25px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 50px;
+    }
+
+    #cont3{
+        top:680px;
+    }
+
+    #group{
+        height:8.5vh;
+        width:50vw;
+        background-color: #ffffff;
+        border-radius: 25px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 50px;
+    }
+
+    #cont4{
+        display:flex;
+        position: absolute;
+        bottom:10px;
+        right:10px;
+    }
+
+    /*#nex{
+        height:5vh;
+        width:20vw;
+        background-color: #ffffff;
+        border-radius: 25px;
+        margin: 10px;
+        font-family: 'PT Sans Narrow', sans-serif, helvetica;
+        color: #018ABE;
+        font-size: 40px;
+    }*/
+    
+    #solochar {
+        width: 25%;
+        transform: translateX(-155%) translateY(70%);
+    }
+    
+    #friends {
+        width: 35%;
+        transform: translateY(125%) translateX(91%);
+    }
+    
+    #back_btn{
+        display:flex;
+        position: absolute;
+        bottom:40px;
+        left:45px;
+    }
+    
+    #img_bac{
+        height:100px;
+        width:100px;
+    }
+}

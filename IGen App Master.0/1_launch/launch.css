@@ -1,0 +1,151 @@
+/*=========IPHONE 6s PLUS MEDIA SCREEN============*/
+@media only screen and (max-width: 414px) {
+    
+    body{
+        background: linear-gradient(to bottom, #97CADB, #FFFFFF, #FFFFFF);
+        height:100vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    #logo{
+        position: absolute;
+        top: 100px;
+    }
+    
+    img {
+        width: 50%;
+        transform: translateX(50%);
+        -webkit-animation: flash linear 2s 3;
+        animation: flash linear 2s 3;
+    }
+    @-webkit-keyframes flash {
+        0% { opacity: 1; } 
+        50% { opacity: .1; } 
+        100% { opacity: 1; }
+    }
+    @keyframes flash {
+        0% { opacity: 1; } 
+        50% { opacity: .1; } 
+        100% { opacity: 1; }
+    }
+    
+    .btns{
+        position: absolute;
+        transform: translateX(70%);
+        height: 8vh;
+        width:40vw;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 30px;
+        font-weight:600;
+        color: #018ABE;
+        background-color: #D6E8EE;
+        border: 3px solid #018ABE;
+        border-radius: 25px;
+        box-shadow: 0 6px #018ABE;
+        opacity: 0;
+        -webkit-animation: fadeIn linear 1s;
+        -webkit-animation-delay:5s;
+        -webkit-animation-fill-mode:forwards;
+    }
+    @-webkit-keyframes fadeIn { 
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+       
+/*
+    .btns:active {
+        background-color: #97CADB;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+*/
+
+     #btn_tut{
+        top:365px;
+    }
+    
+     #btn_start{
+        top: 465px;
+    }
+    
+}
+
+/*=========IPAD PRO MEDIA SCREEN============*/
+@media only screen and (min-width:415px) {
+    
+   body{
+        background: #018ABE;
+        background: linear-gradient(to bottom, #97CADB, #FFFFFF, #FFFFFF);
+        height:100vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    #logo{
+        position: absolute;
+        top: 150px;
+    }
+    
+    img {
+        width: 50%;
+        transform: translateX(50%);
+        -webkit-animation: flash linear 2s 3;
+        animation: flash linear 2s 3;
+    }
+    @-webkit-keyframes flash {
+        0% { opacity: 1; } 
+        50% { opacity: .1; } 
+        100% { opacity: 1; }
+    }
+    @keyframes flash {
+        0% { opacity: 1; } 
+        50% { opacity: .1; } 
+        100% { opacity: 1; }
+    }
+    
+    .btns{
+        position: absolute;
+        transform: translateX(91%);
+        height: 8.5vh;
+        width:35vw;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 65px;
+        font-weight:900;
+        color: #018ABE;
+        background-color: #D6E8EE;
+        border: 5px solid #018ABE;
+        border-radius: 45px;
+        box-shadow: 0 10px #018ABE;
+        opacity: 0;
+        -webkit-animation: fadeIn linear 1s;
+        -webkit-animation-delay:5s;
+        -webkit-animation-fill-mode:forwards;
+    }
+    
+    @-webkit-keyframes fadeIn { 
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+       
+    /*.btns:active {
+        background-color: #97CADB;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }*/
+
+     #btn_tut{
+        top:750px;
+    }
+    
+     #btn_start{
+        top: 950px;
+    }
+    
+}

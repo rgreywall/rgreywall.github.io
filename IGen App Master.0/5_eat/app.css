@@ -1,0 +1,290 @@
+#inpEat{
+    width: 80%;
+    background: #e0e0e0;
+    color: black;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+#validateEat{
+    width: 80px;
+    height: 30px;
+    background: #034fb5;
+    border: 1px solid #ddd;
+    color: #fff;
+    border-radius: 14px;
+}
+#validateEat:hover{
+    background: #164c94;
+}
+ 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: slideIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+    
+}
+
+/* Modal Content */
+.modal-content {
+    
+  background-color: #fefefe;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+#centerElement{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*=========IPHONE X MEDIA SCREEN============*/
+@media screen and (min-width: 375px) {
+    
+    body{
+        font-family: 'PT Sans Narrow', helvetica, sans-serif;*/
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+
+    #main_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        top:0px;
+    }
+
+    .sml_conts{
+        display: flex;
+        position: absolute;
+    }
+
+    #cont1{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 15pt;
+        color:#ffffff;
+        top: 0px;
+    }
+
+    #head_q{
+        text-align: center;
+
+    }
+
+    #cont2{
+        top:200px;
+    }
+
+    #bfast{
+        width: 300px;
+        height: 60px;
+        background-color: #ffffff;
+        border-radius: 25px;
+    }
+
+    #bfast{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 30px;
+    }
+
+    #cont3{
+        top:320px;
+    }
+
+    #lunch{
+        width: 300px;
+        height: 60px;
+        background-color: #ffffff;
+        border-radius: 25px;
+    }
+
+    #lunch{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 30px;
+    }
+
+    #cont4{
+        top:440px;
+    }
+
+    #din{
+        width: 300px;
+        height: 60px;
+        background-color: #ffffff;
+        border-radius: 25px;
+    }
+
+    #din{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 30px;
+    }
+    
+    #back_btn{
+        display:flex;
+        position: absolute;
+        bottom:10px;
+        left:20px;
+    }
+    
+    #img_bac{
+        height:50px;
+        width:50px;
+    }
+}
+
+
+
+/*=========IPAD PRO MEDIA SCREEN============*/
+@media only screen and (min-width:415px) {
+    
+    body{
+        font-family: 'PT Sans Narrow', helvetica, sans-serif;*/
+        background: #018ABE;
+        background: linear-gradient(to bottom, #018ABE, #97CADB, #D6E8EE);
+        height:100vh;
+        width:100vw;
+    }
+
+    #main_cont{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        top:0px;
+    }
+
+    .sml_conts{
+        display: flex;
+        position: absolute;
+    }
+
+    #cont1{
+        font-family: 'Quicksand', helvetica, sans-serif;
+        font-size: 30pt;
+        color:#ffffff;
+        top: 0px;
+    }
+
+    #head_q{
+        text-align: center;
+
+    }
+
+    #cont2{
+        top:400px;
+    }
+
+    #bfast{
+        width: 600px;
+        height: 120px;
+        background-color: #ffffff;
+        border-radius: 45px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 45pt;
+    }
+
+    #cont3{
+        top:620px;
+    }
+
+    #lunch{
+        width: 600px;
+        height: 120px;
+        background-color: #ffffff;
+        border-radius: 45px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 45pt;
+    }
+
+    #cont4{
+        top:840px;
+    }
+
+    #din{
+        width: 600px;
+        height: 120px;
+        background-color: #ffffff;
+        border-radius: 45px;
+        font-family: 'Quicksand', helvetica, sans-serif;
+        color: #018ABE;
+        font-size: 45pt;
+    }
+    
+    #back_btn{
+        display:flex;
+        position: absolute;
+        bottom:40px;
+        left:45px;
+    }
+    
+    #img_bac{
+        height:100px;
+        width:100px;
+    }
+}
+
